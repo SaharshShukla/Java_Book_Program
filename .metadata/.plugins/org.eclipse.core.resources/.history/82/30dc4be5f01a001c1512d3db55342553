@@ -1,0 +1,82 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Arrays_Chapter_Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+/*int[]marks=new int[30];//1
+int avg,sum=0,i;
+Scanner k=new Scanner(System.in);
+for(i=0;i<29;i++)
+	{System.out.print("Enter marks= ");
+marks[i]=k.nextInt();}
+
+for(i=0;i<29;i++)
+{	sum=sum+marks[i];
+avg=sum/30;
+System.out.println("Average is= "+avg);
+}*/
+		
+		/*int []marks= {55,65,75,56,78,78,90};//2
+		int i;
+		for(i=0;i<7;i++)
+		{Modify(marks[i]);}
+		for(i=0;i<7;i++)
+		{System.out.println(marks[i]);}
+	}
+	static void Modify(int m)
+	{
+		m=m*2;
+	}*/
+	
+		/*int []marks= {55,65,75,56,78,78,90};//3
+		int i;
+		
+		Modify(marks);
+		
+		for(i=0;i<=marks.length-1;i++)
+		{System.out.println(marks[i]+"");}
+	}
+	static void Modify(int[] m)
+	{ int i;
+	for(i=0;i<=m.length-1;i++)
+		{m[i]=m[i]*2;}*/
+		
+/*int[]p;//4
+		p=Func();
+		for(int i=0;i<=p.length-1;i++)
+			System.out.println(p[i]+" ");
+	}
+	static int[] Func() 
+	{
+		int []arr= {10,20,30,40,50};
+		return arr;
+	}*/
+	
+		int []arr= {23,45,11,54,89,32};
+		int i;
+		System.out.println("orignal array");
+		for(i=0;i<arr.length;i++)
+			System.out.print(arr[i]+" , ");
+		
+		Arrays.sort(arr);
+		System.out.println("Sorted array");
+		for(i=0;i<arr.length;i++)
+		System.out.print(arr[i]+"  , ");
+		
+		int index=Arrays.binarySearch(arr, i);//54 at place of i
+		int [] newarr=new int[6];
+		newarr=Arrays.copyOf(newarr, arr.length);
+		System.out.println("New array contents");
+		for(i=0;i<newarr.length;i++)
+			System.out.print(newarr[i]+" , ");
+		
+	Arrays.fill(arr, 0);
+	System.out.println("\nCleared array");
+	for(i=0;i<arr.length;i++)
+		System.out.print(arr[i]+"  , ");
+	}
+}
+	
+

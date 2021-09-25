@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class Rectangle{
+	private int len,br;
+	public void getData() {
+		Scanner k=new Scanner(System.in);
+		System.out.print("Enter lenght= ");
+		len=k.nextInt();
+		System.out.println("Enter breath= ");
+		br=k.nextInt();
+	}
+	public void setData(int l,int b) {
+		
+		len=l;
+		br=b;
+	}
+	public void displayData() {
+		System.out.println("Length= "+len);
+		System.out.println("Breath= "+br);
+	}
+	public void areaPeri() {
+		int a,p;
+		a=len*br;
+		p=2*(len+br);
+		System.out.println("area= "+a);
+		System.out.println("perimeter= "+p);
+	}
+}
+public class Classes_And_Objects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Rectangle r1,r2,r3;
+r1=new Rectangle();
+r2=new Rectangle();
+r3=new Rectangle();
+r1.setData(10, 20);
+r1.displayData();
+r1.areaPeri();
+r2.setData(5, 8);
+r2.displayData();
+r2.areaPeri();
+r3.getData();
+r3.displayData();
+r3.areaPeri();
+}
+
+}

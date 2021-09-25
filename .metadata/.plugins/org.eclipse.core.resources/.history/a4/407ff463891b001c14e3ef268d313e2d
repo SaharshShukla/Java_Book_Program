@@ -1,0 +1,18 @@
+
+public class Array_Exercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num=new int[26];//A(a)
+		int temp;
+		num[0]=100;
+		num[25]=200;
+		temp=num[25];
+		num[25]=num[0];
+		num[0]=temp;
+		System.out.println(num[0]+" "+num[25]);
+		
+
+	}
+
+}

@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Array_Exercise {
+	/*int char[] mixed=new int char[100];//B(a)*/
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*int[] num=new int[26];//A(a)
+		int temp;
+		num[0]=100;
+		num[25]=200;
+		temp=num[25];
+		num[25]=num[0];
+		num[0]=temp;
+		System.out.println(num[0]+" "+num[25]);*/
+		
+		/*int[] array=new int[26];//A(b)
+		for(int i=0;i<=25;i++)
+		{
+			array[i]='A'+i;
+			System.out.println(array[i]+" "+(char)array[i]);
+		}*/
+		
+		/*int[] sub =new int[50];//A(c)
+		for(int i=0;i<=48;i++)
+		{
+			sub[i]=i;
+			System.out.println(sub[i]);
+		}*/
+		
+		/*int []a=new int[10];//B(a)
+		Scanner k=new Scanner(System.in);
+		for(int i=1;i<=10;i++)
+		{
+			a[i]=k.nextInt();
+			System.out.println(a[i]);
+		}*/
+		
+		int size;
+		Scanner k=new Scanner(System.in);
+		size=k.nextInt();
+		int[] arr=new int[size+10];
+		for(int i=1;i<=size+10;i++)
+		{
+			arr[i]=k.nextInt();
+			System.out.println(arr[i]);
+		}
+		
+
+	}
+
+}
